@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>k</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="/dash/index.html">Home</a></li>
+        <li><a href="/todod/todo.html">Todo</a></li>
+        <li><a href="/al/a.html">Alarm</a></li>
+        <li><a href="#">Work</a></li>
+      </ul>
+    </div>
+
+    <!-- <form class="userNameForm">
+      <label for="form" style="font-size: 22px">name</label>
+      <input
+        type="text"
+        id="form"
+        aria-autocomplete="none"
+        autocomplete="off"
+      />
+    </form> -->
+
+    <div class="adhan-alarm">
+      <div class="adhan-alarm-header">
+        <h2>Adhan Alarm</h2>
+      </div>
+      <div class="adhan-alarm-form">
+        <label for="adhan-time">Adhan Time:</label>
+        <input type="time" id="adhan-time" />
+        <button id="set-adhan-btn">Set Alarm</button>
+        <button id="stop-adhan-btn" style="display: none">
+          Stop Adhan Alarm
+        </button>
+      </div>
+
+      <div class="adhan-alarm-player">
+        <audio id="adhan-audio" src="azan1.mp3"></audio>
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

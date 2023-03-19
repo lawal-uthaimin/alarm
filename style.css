@@ -1,0 +1,197 @@
+
+
+body{
+  background: #080335!important;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100%;
+  background-color: #030325;
+  color: #fff;
+  border-radius: 0.3rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.sidebar li {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #807b7b;
+  background: rgb(13, 3, 41);
+  margin: 80px;
+  border-radius: 1.0rem;
+  
+}
+
+
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+.sidebar a:hover {
+  color: #f5f5f5;
+}
+
+.adhan-alarm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+ 
+  
+  .adhan-alarm-header {
+    padding: 10px;
+    background-color: #0052cc;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #userNameDisplay{
+    display: flex;
+    margin-right: 472px;
+    font-weight: 850;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  #form{
+    background-color: #fff;
+    width: 230px;
+    margin-top: 100px;
+    height: 35px;
+    border: rgb(150, 66, 150) 1px solid;
+    border-radius: 2.3rem;
+    font-size: 20px;
+    font-weight: 630;
+  }
+  
+  .adhan-alarm-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .adhan-alarm-form label {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .adhan-alarm-form input[type="time"] {
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  .adhan-alarm-form button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0052cc;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .adhan-alarm-player {
+    display: none;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    height: 50px;
+    background-color: #0052cc;
+    box-shadow: none;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0052cc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled .navbar-logo {
+    color: #fff;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-menu-item {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled .navbar-menu-item {
+    color: #fff;
+  }
+  
+  /* Animation styles */
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOutUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
